@@ -5,8 +5,17 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Desktop"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="600" Width="800
+">
     <Grid>
+        <Button Content="Вход" HorizontalAlignment="Left" Margin="504,442,0,0" VerticalAlignment="Top" Height="52" Width="155" Background="#FFFE0000" Click="Button_Click" FontSize="20"/>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="504,499,0,0" VerticalAlignment="Top" Height="54" Width="155"/>
+        <TextBox HorizontalAlignment="Left" Margin="447,229,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="293" Height="32" UseLayoutRounding="False" Padding="-4,0,0,0" BorderThickness="0,0,0,3"/>
+        <Label Content="Добро пожаловать!" HorizontalAlignment="Left" Margin="321,44,0,0" VerticalAlignment="Top" Height="79" Width="443" FontSize="48"/>
+        <Label Content="Почта" HorizontalAlignment="Left" Margin="447,166,0,0" VerticalAlignment="Top" FontSize="36"/>
+        <Label Content="Пароль" HorizontalAlignment="Left" Margin="447,297,0,0" VerticalAlignment="Top" FontSize="36"/>
+        <TextBox HorizontalAlignment="Left" Margin="468,355,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="272" Height="32" UseLayoutRounding="False" Padding="-4,0,0,0" BorderThickness="0,0,0,1" TextChanged="TextBox_TextChanged"/>
+        <Label Content="Востановить пароль" HorizontalAlignment="Left" Margin="555,387,0,0" VerticalAlignment="Top" FontSize="22"/>
 
     </Grid>
 </Window>
