@@ -228,7 +228,7 @@
             </Setter>
         </Style>
     </Window.Resources>
-    <Grid Width="800" Height="608" VerticalAlignment="Top">
+    <Grid Width="800" Height="600" VerticalAlignment="Top">
         <Label Content="Пароль" HorizontalAlignment="Left" Margin="445,159,0,0" VerticalAlignment="Top" Height="74" Width="156" FontSize="36"/>
         <Label Content="Логин" HorizontalAlignment="Left" Margin="445,260,0,0" VerticalAlignment="Top" Height="74" Width="156" FontSize="36"/>
         <TextBox HorizontalAlignment="Left" Margin="453,228,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="296" Height="27" BorderThickness="0,0,0,1"/>

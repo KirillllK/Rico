@@ -118,7 +118,7 @@
             </Setter>
         </Style>
     </Window.Resources>
-    <Grid RenderTransformOrigin="0.503,0.422" Width="800" Height="593" VerticalAlignment="Top">
+    <Grid RenderTransformOrigin="0.503,0.422" Width="800" Height="600" VerticalAlignment="Top">
         <Image Margin="25,10,474,344" Source="/Image2.png" Stretch="Fill"/>
         <Label Content="Welcome back" HorizontalAlignment="Left" Margin="472,30,0,0" VerticalAlignment="Top" FontSize="36"/>
         <Label Content="Имя пользователя" HorizontalAlignment="Left" Margin="472,78,0,0" VerticalAlignment="Top" FontSize="20"/>
