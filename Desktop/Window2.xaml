@@ -67,6 +67,6 @@
         <Image Margin="10,0,698,508" Source="/Screenshot 2025-10-13 215248-fotor-bg-remover-2025101321538.png" Stretch="Fill"/>
         <Label Content="Добро пожаловать!" HorizontalAlignment="Center" Height="67" Margin="0,124,0,0" VerticalAlignment="Top" Width="467" FontSize="48"/>
         <Label Content="Создайте свою первую &#xD;&#xA;задачу" HorizontalAlignment="Left" Height="149" Margin="148,233,0,0" VerticalAlignment="Top" Width="566" FontSize="48"/>
-        <Button Style="{DynamicResource Кнопка1}" Content="Создать первую задачу" HorizontalAlignment="Left" Height="61" Margin="284,426,0,0" VerticalAlignment="Top" Width="327" FontSize="24" Background="#FFEE4646" Foreground="White"/>
+        <Button Style="{DynamicResource Кнопка1}" Content="Создать первую задачу" HorizontalAlignment="Left" Height="61" Margin="268,426,0,0" VerticalAlignment="Top" Width="326" FontSize="24" Background="#FFEE4646" Foreground="White"/>
     </Grid>
 </Window>
