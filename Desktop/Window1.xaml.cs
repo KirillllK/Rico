@@ -30,9 +30,8 @@ namespace Desktop
             f2.Show();
             Hide();
         }
-
-        private void Button_Click_1(object sender, RoutedEventArgs e)
-        {
+        private void registr()
+            {
             string name = TextBox.Text;
             string email = TextBox1.Text;
             var password = TextBox2.Text;
@@ -66,10 +65,14 @@ namespace Desktop
             {
                 MessageBox.Show("Пароли не совпадают", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
                 return;
-                
+
             }
             MessageBox.Show("Вы успешно авторизовались", "Успех", MessageBoxButton.OK);
             return; ;
+        }
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            registr();
         }
         
 
