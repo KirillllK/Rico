@@ -65,7 +65,6 @@ namespace Desktop
             {
                 MessageBox.Show("Пароли не совпадают", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
                 return;
-
             }
             MessageBox.Show("Вы успешно авторизовались", "Успех", MessageBoxButton.OK);
             return; ;
