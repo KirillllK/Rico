@@ -4,12 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Desktop.Repository
+namespace Todo.Entities
 {
-    public class UserRepository
+    internal class UserModel
     {
-        Window1 window = new Window1();
-
-
     }
 }

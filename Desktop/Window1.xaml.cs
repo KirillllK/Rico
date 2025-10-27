@@ -67,11 +67,14 @@ namespace Desktop
                 return;
             }
             MessageBox.Show("Вы успешно авторизовались", "Успех", MessageBoxButton.OK);
-            return; ;
+            
+
+            peres(name, email, password);
         }
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
             registr();
+
         }
         
 
@@ -79,5 +82,22 @@ namespace Desktop
         {
 
         }
+
+        private void TextBox_TextChanged_1(object sender, TextChangedEventArgs e)
+        {
+
+        }
+        private void TextBox2_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+        public void peres(string nam, string ema, string pas)
+        {
+            string ime = nam;
+            string poc = ema;
+            string pss = pas;
+
+        }
+
     }
 }
