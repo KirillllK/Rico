@@ -100,18 +100,28 @@
         </Style>
     </Window.Resources>
     <Grid Height="600" Margin="0,0,0,-16">
-        <Button Content="Задачи" HorizontalAlignment="Left" Margin="10,85,0,0" VerticalAlignment="Top" Click="Button_Click" Height="30" Width="76" BorderBrush="White" Background="White" FontSize="22"/>
-        <Button Content="История" HorizontalAlignment="Left" Margin="10,142,0,0" VerticalAlignment="Top" Click="Button_Click" Height="30" Width="76" BorderBrush="White" Background="White" FontSize="22"/>
+        <Button Content="Задачи" HorizontalAlignment="Left" Margin="10,85,0,0" VerticalAlignment="Top" Click="Button_Click" Height="30" Width="108" BorderBrush="White" Background="White" FontSize="22"/>
+        <Button Content="История" HorizontalAlignment="Left" Margin="10,142,0,0" VerticalAlignment="Top" Click="Button_Click" Height="30" Width="108" BorderBrush="White" Background="White" FontSize="22"/>
         <Button Content="Дом" HorizontalAlignment="Left" Margin="159,28,0,0" VerticalAlignment="Top" Click="Button_Click" Height="30" Width="76" BorderBrush="White" Background="White" FontSize="22" Foreground="#FF85DF7D"/>
         <Button Content="Работа" HorizontalAlignment="Left" Margin="254,28,0,0" VerticalAlignment="Top" Click="Button_Click" Height="30" Width="76" BorderBrush="White" Background="White" FontSize="22" Foreground="#FFEE9E1D"/>
         <Button Content="Учеба" HorizontalAlignment="Left" Margin="350,28,0,0" VerticalAlignment="Top" Click="Button_Click" Height="30" Width="76" BorderBrush="White" Background="White" FontSize="22" Foreground="#FF573EE9"/>
         <Button Content="Отдых" HorizontalAlignment="Left" Margin="453,28,0,0" VerticalAlignment="Top" Click="Button_Click" Height="30" Width="76" BorderBrush="White" Background="White" FontSize="22" Foreground="#FF502C76"/>
         <CheckBox Style="{DynamicResource Чек1бокс}" Content="Go fishing with Stephen" HorizontalAlignment="Left" Margin="171,146,0,0" VerticalAlignment="Top" Height="57" Width="259" VerticalContentAlignment="Center" BorderThickness="3,3,3,3" SnapsToDevicePixels="True" Padding="4,-1,0,0" UseLayoutRounding="True" ScrollViewer.CanContentScroll="True" FontSize="20" Checked="CheckBox_Checked"/>
-        <CheckBox Style="{DynamicResource Чек1бокс}" Content="Go fishing with Stephen" HorizontalAlignment="Left" Margin="171,208,0,0" VerticalAlignment="Top" Height="45" Width="259" VerticalContentAlignment="Center" BorderThickness="3,3,3,3" SnapsToDevicePixels="True" Padding="4,-1,0,0" UseLayoutRounding="True" ScrollViewer.CanContentScroll="True" FontSize="20"/>
-        <CheckBox Style="{DynamicResource Чек1бокс}" Content="Привет" HorizontalAlignment="Left" Margin="171,270,0,0" VerticalAlignment="Top" Height="53" Width="259" VerticalContentAlignment="Center" BorderThickness="3,3,3,3" SnapsToDevicePixels="True" Padding="4,-1,0,0" UseLayoutRounding="True" ScrollViewer.CanContentScroll="True" FontSize="20"/>
-        <CheckBox Style="{DynamicResource Чек1бокс}" Content="Привет" HorizontalAlignment="Left" Margin="171,328,0,0" VerticalAlignment="Top" Height="49" Width="259" VerticalContentAlignment="Center" BorderThickness="3,3,3,3" SnapsToDevicePixels="True" Padding="4,-1,0,0" UseLayoutRounding="True" ScrollViewer.CanContentScroll="True" FontSize="20"/>
-        <CheckBox Style="{DynamicResource Чек1бокс}" Content="Привет" HorizontalAlignment="Left" Margin="168,377,0,0" VerticalAlignment="Top" Height="57" Width="259" VerticalContentAlignment="Center" BorderThickness="3,3,3,3" SnapsToDevicePixels="True" Padding="4,-1,0,0" UseLayoutRounding="True" ScrollViewer.CanContentScroll="True" FontSize="20"/>
-        <CheckBox Style="{DynamicResource Чек1бокс}" Content="Привет" HorizontalAlignment="Left" Margin="168,439,0,0" VerticalAlignment="Top" Height="45" Width="259" VerticalContentAlignment="Center" BorderThickness="3,3,3,3" SnapsToDevicePixels="True" Padding="4,-1,0,0" UseLayoutRounding="True" ScrollViewer.CanContentScroll="True" FontSize="20"/>
+        <CheckBox Style="{DynamicResource Чек1бокс}" Content="Go fishing with Stephen" HorizontalAlignment="Left" Margin="171,208,0,0" VerticalAlignment="Top" Height="45" Width="259" VerticalContentAlignment="Center" BorderThickness="3,3,3,3" SnapsToDevicePixels="True" Padding="4,-1,0,0" UseLayoutRounding="True" ScrollViewer.CanContentScroll="True" FontSize="20" Checked="CheckBox_Checked_2"/>
+        <CheckBox Style="{DynamicResource Чек1бокс}" Content="Meet according with desing team" HorizontalAlignment="Left" Margin="171,270,0,0" VerticalAlignment="Top" Height="53" Width="259" VerticalContentAlignment="Center" BorderThickness="3,3,3,3" SnapsToDevicePixels="True" Padding="4,-1,0,0" UseLayoutRounding="True" ScrollViewer.CanContentScroll="True" FontSize="20"/>
+        <CheckBox Style="{DynamicResource Чек1бокс}" Content="Meet according with desing team" HorizontalAlignment="Left" Margin="171,328,0,0" VerticalAlignment="Top" Height="49" Width="259" VerticalContentAlignment="Center" BorderThickness="3,3,3,3" SnapsToDevicePixels="True" Padding="4,-1,0,0" UseLayoutRounding="True" ScrollViewer.CanContentScroll="True" FontSize="20" Checked="CheckBox_Checked_1"/>
+        <CheckBox Style="{DynamicResource Чек1бокс}" Content="Meet according with desing team" HorizontalAlignment="Left" Margin="168,377,0,0" VerticalAlignment="Top" Height="57" Width="259" VerticalContentAlignment="Center" BorderThickness="3,3,3,3" SnapsToDevicePixels="True" Padding="4,-1,0,0" UseLayoutRounding="True" ScrollViewer.CanContentScroll="True" FontSize="20"/>
+        <CheckBox Style="{DynamicResource Чек1бокс}" Content="Meet according with desing team" HorizontalAlignment="Left" Margin="168,439,0,0" VerticalAlignment="Top" Height="45" Width="259" VerticalContentAlignment="Center" BorderThickness="3,3,3,3" SnapsToDevicePixels="True" Padding="4,-1,0,0" UseLayoutRounding="True" ScrollViewer.CanContentScroll="True" FontSize="20"/>
 
+        <StackPanel HorizontalAlignment="Right" Width="300" Margin="1,126,1,119" Background="White" OpacityMask="White" >
+            <StackPanel x:Name="taskDetailsPanel" Margin="10">
+                <TextBlock x:Name="taskTitle" FontWeight="Bold" FontSize="36" Margin="0,0,0,5" VerticalAlignment="Center"><Run Language="ru-ru" Text="Заголовок"/>
+                </TextBlock>
+                <TextBlock x:Name="taskDate" Foreground="#666" FontSize="12" Margin="0,0,0,10"/>
+                <TextBlock x:Name="taskDescription" TextWrapping="Wrap" Margin="0,0,0,15"/>
+
+            </StackPanel>
+            <Button Content="Button"/>
+        </StackPanel>
     </Grid>
 </Window>

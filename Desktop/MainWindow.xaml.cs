@@ -41,5 +41,12 @@ namespace Desktop
             f2.Show();
             Hide();
         }
+
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            Window3 f2 = new Window3();
+            f2.Show();
+            Hide();
+        }
     }
 }
