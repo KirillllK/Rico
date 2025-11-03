@@ -31,21 +31,32 @@ namespace Desktop
 
         private void CheckBox_Checked(object sender, RoutedEventArgs e)
         {
-            taskTitle.Text = "Go fishing with Stephen";
-            taskDate.Text = "Дата: 15.01.2024";
-            taskDescription.Text = "Встретиться со Стивеном у озера в 10:00. Взять рыболовные снасти.";
+           
         }
 
         private void CheckBox_Checked_1(object sender, RoutedEventArgs e)
         {
-            taskTitle.Text = "Go fishing with Stephen";
-            taskDate.Text = "Дата: 15.01.2024";
-            taskDescription.Text = "УУУУ";
+            
         }
 
         private void CheckBox_Checked_2(object sender, RoutedEventArgs e)
         {
            
+        }
+
+        private void CheckBox_Checked_3(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void CheckBox_Checked_4(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void CheckBox_Checked_5(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }
