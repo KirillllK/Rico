@@ -1,10 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Controls.Primitives;
 using System.Windows.Data;
 using System.Windows.Documents;
 using System.Windows.Input;
@@ -19,6 +21,7 @@ namespace Desktop
     /// </summary>
     public partial class Window3 : Window
     {
+        
         public Window3()
         {
             InitializeComponent();
@@ -33,6 +36,7 @@ namespace Desktop
         {
             if (sender is CheckBox cb)
             {
+                tex1.Text = DateTime.Now.ToString("dd.MM.yyyy");
                 tex.Text = "";
                 tex.Text += cb.Content + "\n";
 
@@ -85,9 +89,25 @@ namespace Desktop
             if (sender is CheckBox cb)
             {
                 tex.Text = "";
-                tex.Text += cb.Content + "\n";
+                tex.Text += cb.Content + "\n";   
 
             }
         }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+
+
+
+        }
+
+
+
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            
+        }
+
     }
+    
 }
