@@ -230,10 +230,10 @@
         <CheckBox Style="{DynamicResource Чек1бокс}" Content="Meet according with desing team" HorizontalAlignment="Left" Margin="168,377,0,0" VerticalAlignment="Top" Height="57" Width="259" VerticalContentAlignment="Center" BorderThickness="3,3,3,3" SnapsToDevicePixels="True" Padding="4,-1,0,0" UseLayoutRounding="True" ScrollViewer.CanContentScroll="True" FontSize="20" Checked="CheckBox_Checked_4"/>
         <CheckBox Style="{DynamicResource Чек1бокс}" Content="Meet according with desing team" HorizontalAlignment="Left" Margin="168,439,0,0" VerticalAlignment="Top" Height="45" Width="259" VerticalContentAlignment="Center" BorderThickness="3,3,3,3" SnapsToDevicePixels="True" Padding="4,-1,0,0" UseLayoutRounding="True" ScrollViewer.CanContentScroll="True" FontSize="20" Checked="CheckBox_Checked_5"/>
         <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="431" Margin="470,107,0,0" VerticalAlignment="Top" Width="299" Grid.ColumnSpan="2">
-            <TextBlock HorizontalAlignment="Center" Height="33" Margin="0,86,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="299"/>
+            <TextBlock x:Name="tex" HorizontalAlignment="Center" Height="33" Margin="0,86,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="299"/>
         </Border>
         <Button Style="{DynamicResource Кнопка1}" Content="Удалить" HorizontalAlignment="Left" Margin="544,461,0,0" VerticalAlignment="Top" Height="49" Width="152" RenderTransformOrigin="0.016,0.756" Background="#FFFC3E3E" Foreground="White" FontSize="24" Grid.ColumnSpan="2"/>
         <Button Style="{DynamicResource Кноп2}" Content="Готово" HorizontalAlignment="Left" Margin="544,406,0,0" VerticalAlignment="Top" Height="47" Width="152" Grid.ColumnSpan="2" Background="#FFFC3E3E" Foreground="White" FontSize="24"/>
-        <TextBlock HorizontalAlignment="Left" Height="33" Margin="470,240,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="299" Grid.ColumnSpan="2"/>
+        <TextBlock x:Name="tex1" HorizontalAlignment="Left" Height="33" Margin="470,257,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="299" Grid.ColumnSpan="2"/>
     </Grid>
 </Window>
