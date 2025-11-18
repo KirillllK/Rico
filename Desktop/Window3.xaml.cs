@@ -21,7 +21,7 @@ namespace Desktop
     /// </summary>
     public partial class Window3 : Window
     {
-        
+
         public Window3()
         {
             InitializeComponent();
@@ -82,6 +82,7 @@ namespace Desktop
                 tex.Text += cb.Content + "\n";
 
             }
+
         }
 
         private void CheckBox_Checked_5(object sender, RoutedEventArgs e)
@@ -89,15 +90,27 @@ namespace Desktop
             if (sender is CheckBox cb)
             {
                 tex.Text = "";
-                tex.Text += cb.Content + "\n";   
+                tex.Text += cb.Content + "\n";
 
             }
+
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
+            CheckBox[] all = { checkBox, checkBox1, checkBox2, checkBox3, checkBox4, checkBox5 };
 
-
+            foreach (CheckBox cb in all)
+            {
+                if (cb.IsChecked == true)
+                {
+                    cb.Content = new TextBlock()
+                    {
+                        Text = cb.Content.ToString(),
+                        TextDecorations = TextDecorations.Strikethrough
+                    };
+                }
+            }
 
         }
 
@@ -108,6 +121,9 @@ namespace Desktop
             
         }
 
+        
+
     }
     
+
 }
