@@ -70,6 +70,10 @@ namespace Desktop
             
 
             peres(name, email, password);
+
+            Window2 f2 = new Window2();
+            f2.Show();
+            Hide();
         }
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {

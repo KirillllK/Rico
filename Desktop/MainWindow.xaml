@@ -231,13 +231,14 @@
     <Grid Width="800" Height="600" VerticalAlignment="Top">
         <Label Content="Пароль" HorizontalAlignment="Left" Margin="445,159,0,0" VerticalAlignment="Top" Height="74" Width="156" FontSize="36"/>
         <Label Content="Логин" HorizontalAlignment="Left" Margin="445,260,0,0" VerticalAlignment="Top" Height="74" Width="156" FontSize="36"/>
-        <TextBox HorizontalAlignment="Left" Margin="453,228,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="296" Height="27" BorderThickness="0,0,0,1"/>
-        <TextBox HorizontalAlignment="Left" Margin="453,334,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="296" Height="27" TextChanged="TextBox_TextChanged" FontSize="16" Foreground="#FFD89494" BorderThickness="0,0,0,1"/>
+        <TextBox x:Name="text1" HorizontalAlignment="Left" Margin="453,228,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="296" Height="27" BorderThickness="0,0,0,1" TextChanged="TextBox_TextChanged_1"/>
+        <TextBox x:Name="text2" HorizontalAlignment="Left" Margin="453,334,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="296" Height="27" TextChanged="TextBox_TextChanged" FontSize="16" Foreground="#FFD89494" BorderThickness="0,0,0,1"/>
         <Label Content="Востановить пароль" HorizontalAlignment="Left" Margin="554,361,0,0" VerticalAlignment="Top" Height="74" Width="361" FontSize="22" RenderTransformOrigin="0.474,0.55"/>
         <Label Content="Добро пожаловать!" HorizontalAlignment="Left" Margin="313,39,0,0" VerticalAlignment="Top" Height="74" Width="453" FontSize="48"/>
-        <Image Margin="44,39,544,375" Source="/Image2.png" Stretch="Fill"/>
         <Button Style="{DynamicResource 15}" Content="Вход" HorizontalAlignment="Left" Margin="453,421,0,0" VerticalAlignment="Top" Height="65" Width="208" Background="Red" FontSize="24" Click="Button_Click_2"/>
         <Button Content="Регистация" HorizontalAlignment="Left" Margin="453,491,0,0" VerticalAlignment="Top" Height="68" Width="208" Style="{DynamicResource Кнопка2}" Background="Red" FontSize="24" Click="Button_Click_1"/>
+        <Image HorizontalAlignment="Left" Height="300" Margin="10,44,0,0" VerticalAlignment="Top" Width="303" Source="/ttt/fgsdg.PNG"/>
+
 
     </Grid>
 </Window>

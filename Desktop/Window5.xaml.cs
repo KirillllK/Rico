@@ -15,20 +15,13 @@ using System.Windows.Shapes;
 namespace Desktop
 {
     /// <summary>
-    /// Логика взаимодействия для Window2.xaml
+    /// Логика взаимодействия для Window5.xaml
     /// </summary>
-    public partial class Window2 : Window
+    public partial class Window5 : Window
     {
-        public Window2()
+        public Window5()
         {
             InitializeComponent();
-        }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            Window4 f2 = new Window4();
-            f2.Show();
-            Hide();
         }
     }
 }

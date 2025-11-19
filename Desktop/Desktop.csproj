@@ -7,4 +7,14 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="image\Снимок.PNG" />
+    <None Remove="imagleee\fgsdg.PNG" />
+    <None Remove="ttt\fgsdg.PNG" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="ttt\fgsdg.PNG" />
+  </ItemGroup>
+
 </Project>

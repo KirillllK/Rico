@@ -44,9 +44,15 @@ namespace Desktop
 
         private void Button_Click_2(object sender, RoutedEventArgs e)
         {
-            Window3 f2 = new Window3();
+
+            Window2 f2 = new Window2();
             f2.Show();
             Hide();
+        }
+
+        private void TextBox_TextChanged_1(object sender, TextChangedEventArgs e)
+        {
+
         }
     }
 }
