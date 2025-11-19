@@ -37,8 +37,7 @@ namespace Desktop
             var password = TextBox2.Text;
             var password2 = TextBox3.Text;
 
-            // Валидация полей ввода
-            // Имя
+            
             if (string.IsNullOrEmpty(name))
             {
                 MessageBox.Show("Поле <<Имя>> должно быть заполненно", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
@@ -67,13 +66,14 @@ namespace Desktop
                 return;
 
             }
-            MessageBox.Show("Вы успешно авторизовались", "Успех", MessageBoxButton.OK);
-            return; ;
+
+            Window2 f2 = new Window2();
+            f2.Show();
+            this.Hide();
         }
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
             registr();
-
         }
         
 
