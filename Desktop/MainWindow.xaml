@@ -236,7 +236,7 @@
         <Label Content="Востановить пароль" HorizontalAlignment="Left" Margin="554,361,0,0" VerticalAlignment="Top" Height="74" Width="361" FontSize="22" RenderTransformOrigin="0.474,0.55"/>
         <Label Content="Добро пожаловать!" HorizontalAlignment="Left" Margin="313,39,0,0" VerticalAlignment="Top" Height="74" Width="453" FontSize="48"/>
         <Image Margin="44,39,544,375" Source="/Image2.png" Stretch="Fill"/>
-        <Button Style="{DynamicResource 15}" Content="Вход" HorizontalAlignment="Left" Margin="453,421,0,0" VerticalAlignment="Top" Height="65" Width="208" Background="Red" FontSize="24"/>
+        <Button Style="{DynamicResource 15}" Content="Вход" HorizontalAlignment="Left" Margin="453,421,0,0" VerticalAlignment="Top" Height="65" Width="208" Background="Red" FontSize="24" Click="Button_Click_2"/>
         <Button Content="Регистация" HorizontalAlignment="Left" Margin="453,491,0,0" VerticalAlignment="Top" Height="68" Width="208" Style="{DynamicResource Кнопка2}" Background="Red" FontSize="24" Click="Button_Click_1"/>
 
     </Grid>
