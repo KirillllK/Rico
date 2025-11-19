@@ -22,9 +22,74 @@ namespace Desktop
     public partial class Window3 : Window
     {
 
+
+        private List<TaskItem> tasks = new List<TaskItem>();
+
         public Window3()
         {
             InitializeComponent();
+        }
+
+        public void AddTaskToList(string title, string category, string description, DateTime selectedDate, DateTime currentTime)
+        {
+            TaskItem newTask = new TaskItem
+            {
+                Title = title,
+                Category = category,
+                Description = description,
+                DueDate = selectedDate,
+                CreatedTime = currentTime,
+                IsCompleted = false
+            };
+
+            tasks.Add(newTask);
+            UpdateListBox(); // Обновляем отображение
+        }
+        private void UpdateListBox()
+        {
+            ListBox.Items.Clear();
+
+            foreach (var task in tasks)
+            {
+                // Создаем контейнер для элемента ListBox
+                ListBoxItem listBoxItem = new ListBoxItem();
+
+                // Создаем StackPanel с CheckBox и TextBlock
+                StackPanel panel = new StackPanel();
+                panel.Orientation = Orientation.Horizontal;
+                panel.Margin = new Thickness(5);
+
+                // CheckBox
+                CheckBox checkBox = new CheckBox();
+                checkBox.IsChecked = task.IsCompleted;
+                checkBox.VerticalAlignment = VerticalAlignment.Center;
+                checkBox.Margin = new Thickness(0, 0, 10, 0);
+                checkBox.Checked += (s, e) =>
+                {
+                    task.IsCompleted = true;
+                    UpdateListBox(); // Обновляем отображение
+                };
+                checkBox.Unchecked += (s, e) =>
+                {
+                    task.IsCompleted = false;
+                    UpdateListBox(); // Обновляем отображение
+                };
+
+                // Текстовый блок с информацией
+                TextBlock textBlock = new TextBlock();
+                textBlock.Text = $"{task.Title}\n{task.CreatedTime:hh:mmtt}\n\n{task.Description}";
+                textBlock.TextWrapping = TextWrapping.Wrap;
+                textBlock.VerticalAlignment = VerticalAlignment.Center;
+
+                panel.Children.Add(checkBox);
+                panel.Children.Add(textBlock);
+
+                // Устанавливаем панель как содержимое ListBoxItem
+                listBoxItem.Content = panel;
+
+                // Добавляем в ListBox
+                ListBox.Items.Add(listBoxItem);
+            }
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
@@ -43,73 +108,46 @@ namespace Desktop
             }
         }
 
-        private void CheckBox_Checked_1(object sender, RoutedEventArgs e)
-        {
-            if (sender is CheckBox cb)
-            {
-                tex.Text = "";
-                tex.Text += cb.Content + "\n";
-
-            }
-        }
-
-        private void CheckBox_Checked_2(object sender, RoutedEventArgs e)
-        {
-            if (sender is CheckBox cb)
-            {
-                tex.Text = "";
-                tex.Text += cb.Content + "\n";
-
-            }
-        }
-
-        private void CheckBox_Checked_3(object sender, RoutedEventArgs e)
-        {
-            if (sender is CheckBox cb)
-            {
-                tex.Text = "";
-                tex.Text += cb.Content + "\n";
-
-            }
-
-        }
-
-        private void CheckBox_Checked_4(object sender, RoutedEventArgs e)
-        {
-            if (sender is CheckBox cb)
-            {
-                tex.Text = "";
-                tex.Text += cb.Content + "\n";
-
-            }
-
-        }
-
-        private void CheckBox_Checked_5(object sender, RoutedEventArgs e)
-        {
-            if (sender is CheckBox cb)
-            {
-                tex.Text = "";
-                tex.Text += cb.Content + "\n";
-
-            }
-
-        }
+ 
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            CheckBox[] all = { checkBox, checkBox1, checkBox2, checkBox3, checkBox4, checkBox5 };
-
-            foreach (CheckBox cb in all)
+            if (ListBox.SelectedIndex == -1)
             {
-                if (cb.IsChecked == true)
+                MessageBox.Show("Выберите задачу для удаления!", "Информация",
+                              MessageBoxButton.OK, MessageBoxImage.Information);
+                return;
+            }
+
+            try
+            {
+                // Получаем выбранную задачу
+                TaskItem selectedTask = tasks[ListBox.SelectedIndex];
+
+                // Сохраняем индекс перед удалением
+                int selectedIndex = ListBox.SelectedIndex;
+
+                // Удаляем задачу из списка (БЕЗ ПОДТВЕРЖДЕНИЯ)
+                tasks.RemoveAt(selectedIndex);
+
+                // Обновляем ListBox
+                UpdateListBox();
+
+                // Очищаем поля деталей
+                tex.Text = "";
+                tex1.Text = "";
+
+                // Если после удаления остались задачи, выбираем следующую
+                if (tasks.Count > 0)
                 {
-                    cb.Content = new TextBlock()
-                    {
-                        Text = cb.Content.ToString(),
-                        TextDecorations = TextDecorations.Strikethrough
-                    };
+                    int newIndex = Math.Min(selectedIndex, tasks.Count - 1);
+                    ListBox.SelectedIndex = newIndex;
                 }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Ошибка при удалении задачи: {ex.Message}", "Ошибка",
+                              MessageBoxButton.OK, MessageBoxImage.Error);
             }
 
         }
@@ -120,10 +158,30 @@ namespace Desktop
         {
             
         }
+        private void ListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if (ListBox.SelectedIndex != -1)
+            {
+                TaskItem selectedTask = tasks[ListBox.SelectedIndex];
 
-        
+                tex.Text = selectedTask.Title;
 
+                tex1.Text = selectedTask.Description;
+            }
+            else
+            {
+                tex.Text = "";
+                tex1.Text = "";
+            }
+        }
+
+        private void Button_Click_3(object sender, RoutedEventArgs e)
+        {
+            Window4 f2 = new Window4();
+            f2.Show();
+            Hide();
+        }
     }
-    
+    }
 
-}
+

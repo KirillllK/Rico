@@ -111,14 +111,13 @@
         <Label Content="Название" HorizontalAlignment="Left" Margin="45,36,0,0" VerticalAlignment="Top" Height="43" Width="109" FontSize="20"/>
         <Label Content="Категория" HorizontalAlignment="Left" Margin="45,182,0,0" VerticalAlignment="Top" Height="43" Width="109" FontSize="20"/>
         <Label Content="Описание" HorizontalAlignment="Left" Margin="45,297,0,0" VerticalAlignment="Top" Height="43" Width="109" FontSize="20"/>
-        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="106" Margin="455,343,0,0" VerticalAlignment="Top" Width="255"/>
-        <Label Content="TimePicker" HorizontalAlignment="Left" Margin="533,379,0,0" VerticalAlignment="Top" FontSize="18"/>
-        <TextBox Style="{DynamicResource Текс1}" HorizontalAlignment="Left" Height="88" Margin="45,89,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="260" TextChanged="TextBox_TextChanged"/>
-        <TextBox HorizontalAlignment="Left" Height="51" Margin="45,241,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="260" Style="{DynamicResource Текс1}"/>
-        <TextBox HorizontalAlignment="Left" Height="88" Margin="45,352,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="260" Style="{DynamicResource Текс1}"/>
-        <DatePicker HorizontalAlignment="Left" Margin="455,112,0,0" VerticalAlignment="Top" Height="113" Width="255"/>
-        <Button Style="{DynamicResource кнопка1}" Content="Создать" HorizontalAlignment="Left" Margin="100,514,0,0" VerticalAlignment="Top" Height="56" Width="240" FontSize="24" Background="#FF1FC800" Foreground="White"/>
+        <TextBox x:Name="text" Style="{DynamicResource Текс1}" HorizontalAlignment="Left" Height="88" Margin="45,89,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="260" TextChanged="TextBox_TextChanged"/>
+        <TextBox x:Name="text1" HorizontalAlignment="Left" Height="51" Margin="45,241,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="260" Style="{DynamicResource Текс1}" TextChanged="text1_TextChanged"/>
+        <TextBox x:Name="text2" HorizontalAlignment="Left" Height="88" Margin="45,352,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="260" Style="{DynamicResource Текс1}"/>
+        <DatePicker x:Name="data" HorizontalAlignment="Left" Margin="477,64,0,0" VerticalAlignment="Top" Height="113" Width="255"/>
+        <Button Style="{DynamicResource кнопка1}" Content="Создать" HorizontalAlignment="Left" Margin="100,514,0,0" VerticalAlignment="Top" Height="56" Width="240" FontSize="24" Background="#FF1FC800" Foreground="White" Click="Button_Click_1"/>
         <Button Style="{DynamicResource кнопка1}" Content="Отмена" HorizontalAlignment="Left" Margin="455,514,0,0" VerticalAlignment="Top" Height="56" Width="240" Background="Red" FontSize="24" Foreground="#FFFFFEFE" Click="Button_Click"/>
+        
 
     </Grid>
 </Window>
