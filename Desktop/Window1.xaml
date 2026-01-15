@@ -122,12 +122,12 @@
         <Label Content="Welcome back" HorizontalAlignment="Left" Margin="472,30,0,0" VerticalAlignment="Top" FontSize="36"/>
         <Label Content="Имя пользователя" HorizontalAlignment="Left" Margin="472,78,0,0" VerticalAlignment="Top" FontSize="20"/>
         <Label Content="Ваша почта" HorizontalAlignment="Left" Margin="472,150,0,0" VerticalAlignment="Top" FontSize="20"/>
-        <TextBox x:Name="TextBox" HorizontalAlignment="Left" Margin="482,115,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="221" Height="25" BorderThickness="0,0,0,1" TextChanged="TextBox_TextChanged_1"/>
-        <TextBox x:Name="TextBox1" HorizontalAlignment="Left" Margin="482,187,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="221" Height="25" BorderThickness="0,0,0,1" TextChanged="TextBox_TextChanged"/>
+        <TextBox Style="{DynamicResource taxt}" x:Name="TextBox" HorizontalAlignment="Left" Margin="482,115,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="221" Height="25" BorderThickness="0,0,0,1" TextChanged="TextBox_TextChanged_1"/>
+        <TextBox Style="{DynamicResource taxt}" x:Name="TextBox1" HorizontalAlignment="Left" Margin="482,187,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="221" Height="25" BorderThickness="0,0,0,1" TextChanged="TextBox_TextChanged"/>
         <Label Content="Пароль" HorizontalAlignment="Left" Margin="472,222,0,0" VerticalAlignment="Top" FontSize="20"/>
-        <TextBox x:Name="TextBox2" HorizontalAlignment="Left" Margin="482,272,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="221" Height="24" BorderThickness="0,0,0,1" TextChanged="TextBox2_TextChanged"/>
+        <TextBox Style="{DynamicResource taxt}" x:Name="TextBox2" HorizontalAlignment="Left" Margin="482,272,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="221" Height="24" BorderThickness="0,0,0,1" TextChanged="TextBox2_TextChanged"/>
         <Label Content="Повторите пароль" HorizontalAlignment="Left" Margin="471,301,0,0" VerticalAlignment="Top" FontSize="20"/>
-        <TextBox x:Name="TextBox3" HorizontalAlignment="Left" Margin="482,343,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="221" Height="24" BorderThickness="0,0,0,1"/>
+        <TextBox Style="{DynamicResource taxt}" x:Name="TextBox3" HorizontalAlignment="Left" Margin="482,343,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="221" Height="24" BorderThickness="0,0,0,1"/>
         <Button Style="{DynamicResource 1}" Content="Зарегистрироватся" HorizontalAlignment="Left" Margin="472,408,0,0" VerticalAlignment="Top" Height="56" Width="210" Background="Red" FontSize="22" Click="Button_Click_1"/>
         <Button Style="{DynamicResource Кнопка2}" Content="Назад" HorizontalAlignment="Left" Margin="472,488,0,0" VerticalAlignment="Top" Height="48" Width="210" Background="#FFFE0000" FontSize="22" Click="Button_Click"/>
         <Image HorizontalAlignment="Left" Height="436" Margin="57,103,0,0" VerticalAlignment="Top" Width="403" Source="/ttt/fgsdg.PNG" RenderTransformOrigin="0.5,0.5">
@@ -140,5 +140,5 @@
                 </TransformGroup>
             </Image.RenderTransform>
         </Image>
-    </Grid>
+    </Grid> 
 </Window>
