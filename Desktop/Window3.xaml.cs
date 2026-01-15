@@ -156,7 +156,73 @@ namespace Desktop
 
         private void Button_Click_2(object sender, RoutedEventArgs e)
         {
-            
+            if (ListBox.SelectedIndex == -1)
+            {
+                MessageBox.Show("Выберите задачу для завершения!", "Информация",
+                              MessageBoxButton.OK, MessageBoxImage.Information);
+                return;
+            }
+
+            try
+            {
+                // Получаем выбранную задачу
+                int selectedIndex = ListBox.SelectedIndex;
+                TaskItem selectedTask = tasks[selectedIndex];
+
+                // 1. Меняем статус на "завершено"
+                selectedTask.IsCompleted = true;
+
+                // 2. Сохраняем в переменную (добавь поле в класс)
+                completedTasks.Add(selectedTask);
+
+                // 3. Обновляем элемент в ListBox - делаем зачеркнутым с галочкой
+                UpdateTaskInListBox(selectedIndex);
+
+                // 4. Обновляем детали
+                tex.Text = $"[✓] {selectedTask.Title}";
+                tex1.Text = $"Завершено: {DateTime.Now:dd.MM.yyyy HH:mm}";
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Ошибка: {ex.Message}", "Ошибка",
+                              MessageBoxButton.OK, MessageBoxImage.Error);
+            }
+        }
+        private List<TaskItem> completedTasks = new List<TaskItem>();
+
+        private void UpdateTaskInListBox(int index)
+        {
+            TaskItem task = tasks[index];
+
+            // Создаем новый элемент
+            ListBoxItem listBoxItem = new ListBoxItem();
+
+            StackPanel panel = new StackPanel();
+            panel.Orientation = Orientation.Horizontal;
+            panel.Margin = new Thickness(5);
+
+            // CheckBox с галочкой
+            CheckBox checkBox = new CheckBox();
+            checkBox.IsChecked = true;
+            checkBox.VerticalAlignment = VerticalAlignment.Center;
+            checkBox.Margin = new Thickness(0, 0, 10, 0);
+            checkBox.IsEnabled = false;
+
+            // Текст с зачеркиванием
+            TextBlock textBlock = new TextBlock();
+            textBlock.Text = $"{task.Title}\n{task.CreatedTime:hh:mmtt}\n\n{task.Description}";
+            textBlock.TextWrapping = TextWrapping.Wrap;
+            textBlock.VerticalAlignment = VerticalAlignment.Center;
+            textBlock.TextDecorations = TextDecorations.Strikethrough;
+            textBlock.Foreground = Brushes.Gray;
+
+            panel.Children.Add(checkBox);
+            panel.Children.Add(textBlock);
+            listBoxItem.Content = panel;
+
+            // Заменяем элемент в ListBox
+            ListBox.Items[index] = listBoxItem;
         }
         private void ListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
